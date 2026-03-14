@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "quickbz",
+  "version": "${version}",
+  "name": "QuickBZ",
+  "description": "Fast Hypixel SkyBlock Bazaar hotkeys: instasell and instabuy with a single keybind.",
+  "authors": ["lix"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.lix.quickbz.QuickBZMod"],
+    "modmenu": ["com.lix.quickbz.config.QuickBZModMenuIntegration"]
+  },
+  "mixins": ["quickbz.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.10",
+    "cloth-config2": "*"
+  }
+}
